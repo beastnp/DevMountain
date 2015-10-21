@@ -1,0 +1,41 @@
+body {
+    height: 900px;
+    width: 900px;
+    margin: 0;
+}
+
+#left {
+    background-color: #469ce2;
+    height: 900px;
+    width: 300px;
+    float: left;
+}
+
+#center {
+    background-color: turquoise;
+    height: 900px;
+    width: 300px;
+    float: left;
+}
+
+#right-top {
+    background-color: #c4fc41;
+    height: 700px;
+    width: 300px;
+    float: right;
+}
+
+#right-bottom {
+    background-color: red;
+    height: 200px;
+    width: 300px;
+    float: left;
+}
+
+p {
+  color: white;
+  font-size: 24px;
+  font-family: sans-serif;
+  text-align: center;
+  padding: 45px;
+}

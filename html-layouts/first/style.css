@@ -1,0 +1,39 @@
+body {
+  width: 1000px;
+  height: 1020px;
+  margin: 0;
+}
+
+header {
+  background-color: dimgrey;
+  height: 170px;
+  width: 1000px;
+  clear: both;
+}
+
+#left-bar {
+  background-color: #d1cfcf;
+  width: 160px;
+  height: 850px;
+  float: left;
+}
+
+#center-section {
+  width: 680px;
+  height: 770px;
+  float: left;
+}
+
+#right-bar {
+  background-color: #d1cfcf;
+  width: 160px;
+  height: 850px;
+  float: right;
+}
+
+#bottom-bar {
+  background-color: black;
+  width: 680px;
+  height: 80px;
+  float: left;
+}
