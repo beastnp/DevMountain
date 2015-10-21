@@ -110,7 +110,15 @@ contains(names, 'Colt', function(result){
 
 /* NEXT PROBLEM ---- NEXT PROBLEM ---- NEXT PROBLEM ---- NEXT PROBLEM */
 
-
+var uniq = function(arr, cb) {
+    var newArray = [];
+    arr.forEach(function(name) {
+        if (arr.indexOf(name) === arr.lastIndexOf(name)) {
+            newArray.push(name);
+        }
+    });
+    cb(newArray);
+};
 
 
     //Code Here for uniq
@@ -118,12 +126,14 @@ contains(names, 'Colt', function(result){
 
 
 var uniq = function(arr, cb) {
-    var newArr = names.reduce(function(a, b) {
-    if(a.indexOf(b) < 0) a.push(b);
-    return a;
-    }, []);
-    callback(newArr)
-}
+    var newArray = [];
+    arr.forEach(function(key) {
+       if (newArray.indexOf(key) === -1) {
+       newArray.push(key);
+       }
+    });
+    cb(newArray);
+};
 
 var names = ['Tyler', 'Cahlan', 'Ryan', 'Colt', 'Tyler', 'Blaine', 'Cahlan'];
 uniq(names, function(uniqArr){
@@ -140,6 +150,14 @@ uniq(names, function(uniqArr){
 
 
     //Code Here for each
+
+var each = function(arr, cb) {
+    for (var i in arr) {
+        num1 = arr[i];
+        num2 = i;
+        cb(num1, num2)
+    }
+};
 
 var names = ['Tyler', 'Cahlan', 'Ryan', 'Colt', 'Tyler', 'Blaine', 'Cahlan'];
 each(names, function(item, indice){
