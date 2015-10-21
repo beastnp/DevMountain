@@ -1,0 +1,54 @@
+body {
+    height: 100%;
+    width: 100%; 
+}
+
+.wrapper {
+    width: 600px;
+    height: 750px;
+    margin: 0 auto;
+    background-color: black;
+    border: 1px solid black;
+}    
+
+#first, #second {
+    background-color: black;
+    float: left;
+    margin: 10px 0px 0px 40px;
+}
+
+#first p, #second p {
+    color: white;
+    font-family: sans-serif;
+    font-weight: 100;
+    font-size: 14px;
+}
+
+.text {
+    height: 600px;
+    width: 600px;
+    background-color: white;
+    margin: 70px 0px;
+}
+
+#left-side, #right-side {
+    height: 500px;
+    width: 240px;
+    float: left;
+    margin: 50px 0px 50px 40px;
+}
+
+#left-side p, #right-text p {
+    font-size: 13px;
+    text-align: justify;
+}
+
+#right-side {
+    margin: 50px 50px 40px 30px;
+}
+
+#right-box {
+    width: 240px;
+    height: 200px;
+    background-color: #D8D8D8;
+}
