@@ -1,0 +1,67 @@
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.intro {
+    text-align: justify;
+    vertical align: top;
+    width: 90%;
+    font-size: 130%;
+    margin: 0 auto;
+    font-family: sans-serif;
+}
+
+#bold-welcome {
+    text-align: right;
+}
+
+.main-body {
+    width:660px;
+    margin: 0 auto;
+}
+
+#r1, #r2, #r3, #r4 {
+    float: left;
+    margin-left: 2%;
+    margin-bottom: 2%;
+}
+.resize {
+    height: 175px;
+    width: 150px;
+}
+
+.bottom-text {
+    width: 500px;
+    height: 50px;
+    position: absolute;
+    margin: 750px 0px 0px 100px;
+}
+
+.bottom-text p {
+    text-align: center;
+    font-size: 80%;
+    font-family: sans-serif;
+    border-top: 1.5px solid black;
+    padding-top: 10px;
+}
+
+.bottom-links {
+    height: 50px;
+    width: 500px;
+    position: absolute;
+    margin: 810px 0px 0px 100px;
+}
+
+#bottom-left-link p, #bottom-right-link p {
+    font-family: sans-serif;
+    font-size: 80%;
+    position: absolute;
+    margin-left: 160px;
+}
+
+#bottom-right-link p {
+    margin-left: 260px
+}
+   

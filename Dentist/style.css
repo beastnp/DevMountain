@@ -1,0 +1,146 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    background-color: #005AA3;
+}
+
+.nav-bar-wrapper {
+    height:30px;
+    width: 100%;
+    background-color:#004E8E;
+    border-bottom: 1px solid #378CCD;
+}
+
+.nav-bar, .bottom-wrapper {
+    height: 30px;
+    width: 900px;
+    position: relative;
+    margin: 0 auto;
+    color: floralwhite;
+    font-size: 11px;
+    font-weight: 100;
+    text-align: center;
+    line-height: 3;
+}
+
+.nav-bar span, .bottom-wrapper span {
+    padding: 0 15px;
+    color: #3F97D3;
+}
+
+.twitter, .facebook, .youtube, .linkedin {
+    position: absolute;
+    margin: -27px 0px 0px 780px;
+}
+
+.facebook {
+    margin-left: 805px;
+    margin-top: -30px
+}
+
+.youtube {
+    margin-left: 820px
+}
+
+.linkedin {
+    margin-left: 865px
+}
+
+.center {
+    height: 2900px;
+    width: 900px;
+    background-color: white;
+    margin: 20px auto;
+    border: 2px solid black;
+}
+
+.row1 {
+    float: left;
+    margin: 30px;
+}
+
+.row2, .row3, .row4, .row6, .row8 {
+    margin-left: 10px;
+}
+
+.row3 {
+    margin-top: 100px
+}
+
+#img2, #img3 {
+    margin-left: 20px;
+}
+
+.row4 {
+    margin-top: 20px
+}
+
+.row4 p {
+    height: 100px;
+    width: 270px;
+    float: left;
+    font-size: 13px;
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+#p2, #p3 {
+    margin-left: 30px
+}
+
+.row5 a {
+    margin-left: 20px; 
+    font-size: 14px;
+    font-weight: 600;
+    color: black;
+    text-decoration: none;
+}
+
+#hyp2, #hyp3 {
+    margin-left: 190px
+}
+
+.row6, .row8 {
+    margin-top: 70px;
+}
+
+.row7 {
+    margin: 0px 20px;
+    font-size: 13px;
+    line-height: 1.5;
+    font-weight: 400;
+    width: 850px;
+}
+
+#row7-p3, #row7-p4 {
+    text-align: center;
+}
+
+.bottom-wrapper p {
+    text-align: left;
+    float: left;
+    margin-top: -25px;
+}
+
+.bottom-wrapper span {
+    padding: 0px 5px;
+}
+
+.bottom-wrapper a {
+    color: white;
+    text-decoration: none;
+}
+
+#bottom-middle, #bottom-right {
+    margin-left: 43px;
+}
+
+@media (max-width: 800px) {
+    .nav-bar img {
+        display: none;
+    }
+}
