@@ -110,16 +110,6 @@ contains(names, 'Colt', function(result){
 
 /* NEXT PROBLEM ---- NEXT PROBLEM ---- NEXT PROBLEM ---- NEXT PROBLEM */
 
-var uniq = function(arr, cb) {
-    var newArray = [];
-    arr.forEach(function(name) {
-        if (arr.indexOf(name) === arr.lastIndexOf(name)) {
-            newArray.push(name);
-        }
-    });
-    cb(newArray);
-};
-
 
     //Code Here for uniq
 
@@ -175,6 +165,14 @@ each(names, function(item, indice){
 
 
  //code here for getUserById
+
+var getUserById = function(arr, str, cb) {
+    users.forEach(function(element) {
+        if (element.id === str) {
+            cb(element);
+        }
+    });
+};
 
 var users = [
   {
