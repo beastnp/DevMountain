@@ -16,11 +16,27 @@ var _ = { };
   // Return an array of the first n elements of an array. If n is undefined,
   // return just the first element.
   _.first = function(array, n) {
+      var newArray = [];
+      for (var i = 0; i <= n; i++) {
+          newArray.push(array[i]);
+      }
+      if (n === undefined) {
+          return array[0]
+      }
+      return newArray;
   };
 
   // Like first, but for the last elements. If n is undefined, return just the
   // last element.
   _.last = function(array, n) {
+      var newArray = [];
+      for (var i = array.length - 1; i >= 0; i--) {
+          newArray.push(array[i]);
+      }
+      if (n === undefined) {
+          return array[array.length -1]
+      }
+      return newArray;
   };
 
   // Call iterator(value, key, collection) for each element of collection.
