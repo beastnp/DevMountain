@@ -36,5 +36,20 @@ $(document).ready(function() {
     
     var colors = 'white green red blue yellow'
     
+    var isPressed = false;
+    $('.box').on('mousedown', function() {
+        isPressed = true;
+    })
+    
+    $('.box').on('mouseup', function() {
+        isPressed = false;
+    })
+    
+    $('.box').on('mouseenter', function() {
+        if(isPressed) {
+            $(this).addClass(color);
+        }
+    });
+    
     
 })
