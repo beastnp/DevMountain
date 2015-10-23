@@ -7,7 +7,7 @@ $(document).ready(function () {
         $('#tweet-controls').show();
 
         var charCount = parseInt($('#char-count').text());
-        //        console.log(charCount);
+//console.log(charCount);
 
         $('.tweet-compose').keydown(function(key) {
             if (key.keyCode !== 8) {
@@ -17,6 +17,7 @@ $(document).ready(function () {
                 charCount += 1;
                 $('#char-count').text(charCount.toString());
             }
+//figure out how to delete properly
             
             if (charCount <= 10) {
                 $('#char-count').css('color', 'red');
@@ -25,9 +26,9 @@ $(document).ready(function () {
             }
             
             if (charCount < 0) {
-                $('#tweet-submit').hide();
+                $('#tweet-submit').attr('disabled', true);
             } else {
-                $('#tweet-submit').show();
+                $('#tweet-submit').attr('disabled', false);
             }
 
         })
