@@ -7,9 +7,9 @@ $(document).ready(function () {
         $('#tweet-controls').show();
 
         var charCount = parseInt($('#char-count').text());
-//console.log(charCount);
+        //console.log(charCount);
 
-        $('.tweet-compose').keydown(function(key) {
+        $('.tweet-compose').keydown(function (key) {
             if (key.keyCode !== 8) {
                 charCount -= 1;
                 $('#char-count').text(charCount.toString());
@@ -17,14 +17,14 @@ $(document).ready(function () {
                 charCount += 1;
                 $('#char-count').text(charCount.toString());
             }
-//figure out how to delete properly
-            
+            //figure out how to delete properly; possibly use this var tweetText = $('.tweet-compose').val()
+
             if (charCount <= 10) {
                 $('#char-count').css('color', 'red');
             } else {
                 $('#char-count').css('color', '#999');
             }
-            
+
             if (charCount < 0) {
                 $('#tweet-submit').attr('disabled', true);
             } else {
@@ -33,6 +33,25 @@ $(document).ready(function () {
 
         })
 
+    });
+
+
+    $('#tweet-submit').on('click', function (ev) {
+        ev.preventDefault();
+        var tweetText = $('.tweet-compose').val();
+        //        console.log(tweetText);
+
+        var tweet = $('.tweet:first').clone();
+        tweet.prependTo('#stream');
+        
+        $('.tweet:first .avatar').attr('src', 'img/alagoon.jpg');
+        $('.tweet:first .fullname').text('Your Name');
+        $('.tweet:first .username').text('@yourname');
+        $('.tweet:first .tweet-text').text(tweetText);
+        $('.tweet:first .num-retweets').text('0');
+        $('.tweet:first .num-favorites').text('0');
+        $('.tweet:first .tweet-compose').attr('placeholder', 'Reply to @yourname');
+        
     });
 
 
