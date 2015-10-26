@@ -79,11 +79,4 @@ $(document).ready(function () {
         $('.stats, .reply').slideToggle('slow');
     });
 
-
-
-
-
-
-
-
 });
