@@ -2,6 +2,45 @@ var app = angular.module('fbApp');
 
 app.controller('angularFriends', function($scope) {
     
+    $scope.sortOptions = 'name';
+    $scope.orderSort = false;
+    
+    $scope.nameSortOptions = [
+        {
+            value: "name",
+            display: "Name"
+        },
+        {
+            value: "friend_count",
+            display: "#Friends"
+        },
+        {
+            value: "current_location.city",
+            display: "City"
+        },
+        {
+            value: "current_location.state",
+            display: "State"
+        },
+        {
+            value: "current_location.country",
+            display: "Country"
+        }
+    ];
+    
+    $scope.orderSort = [
+        {
+            value: false,
+            display: "Ascending"
+        },
+        {
+            value: true,
+            display: "Descending"
+        }
+    ];
+    
+    $scope.orderOption = false;
+    $scope.sortOption = "name";
     
    $scope.friends = [
   {
