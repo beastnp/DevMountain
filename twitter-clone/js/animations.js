@@ -43,16 +43,47 @@ $(document).ready(function () {
 
         var tweet = $('.tweet:first').clone();
         tweet.prependTo('#stream');
-        
+
         $('.tweet:first .avatar').attr('src', 'img/alagoon.jpg');
-        $('.tweet:first .fullname').text('Your Name');
-        $('.tweet:first .username').text('@yourname');
+        $('.tweet:first .fullname').text('Shia Le Boouf');
+        $('.tweet:first .username').text('@thebigshia');
         $('.tweet:first .tweet-text').text(tweetText);
         $('.tweet:first .num-retweets').text('0');
         $('.tweet:first .num-favorites').text('0');
-        $('.tweet:first .tweet-compose').attr('placeholder', 'Reply to @yourname');
-        
+        $('.tweet:first .tweet-compose').attr('placeholder', 'Reply to @thebigshia');
+
+        charCount = 140;
+        $('#char-count').text(charCount.toString());
+        $('.tweet-compose').val("");
+
+        $('.tweet').hover(function () {
+            $('.tweet-actions').show();
+        }, function () {
+            $('.tweet-actions').hide();
+            $('.tweet').click(function () {
+                $('.stats, .reply').slideToggle('slow');
+            });
+        });
+
+    });
+
+    $('.stats, .reply').hide();
+
+    $('.tweet').hover(function () {
+        $('.tweet-actions').show();
+    }, function () {
+        $('.tweet-actions').hide();
+    });
+
+    $('.tweet').click(function () {
+        $('.stats, .reply').slideToggle('slow');
     });
 
 
-})
+
+
+
+
+
+
+});
