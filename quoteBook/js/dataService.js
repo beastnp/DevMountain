@@ -45,14 +45,14 @@ angular.module('quoteBook').service('dataService', function () {
         quotes.splice(index, 1);
     }
 
-    //    this.removeData2 = function (quoteText) {
-    //        quotes.forEach(objKey, index) {
-    //            if (objKey.text === quoteText) {
-    //                quotes.splice(index, 1);
-    //            }
-    //            return quotes;
-    //        }
-    //    };
+//        this.removeData2 = function (quoteText) {
+//            quotes.forEach(objKey, index) {
+//                if (objKey.text === quoteText) {
+//                    quotes.splice(index, 1);
+//                }
+//                return quotes;
+//            }
+//        };
 
     this.removeData2 = function (quoteText) {
         for (var i = 0; i < quotes.length; i++) {
