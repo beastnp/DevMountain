@@ -19,7 +19,7 @@ app.service('itunesService', function ($http, $q) {
 
     $http.jsonp(url).then(function (response) {
         var parsedResponse = response.data.results;
-        
+        console.log(parsedResponse);
 
         var myFinalArray = [];
 
@@ -31,6 +31,7 @@ app.service('itunesService', function ($http, $q) {
             obj.CollectionPrice = element.collectionPrice;
             obj.Play = element.previewUrl;
             obj.Type = element.kind;
+            obj.SongTitle = element.trackName;
             myFinalArray.push(obj);
         })
         deferred.resolve(myFinalArray);
