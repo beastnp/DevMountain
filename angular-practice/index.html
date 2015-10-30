@@ -9,6 +9,9 @@
        
        <input ng-model="sort.name" placeholder="Name"><input ng-model="sort.gender" placeholder="Gender"><input ng-model="sort.eye_color" placeholder="Eye Color"><input ng-model="sort.hair_color" placeholder="Hair Color">
        
+       <button ng-click="previous()" ng-disabled="currentPage <= 1">Previous</button>
+       <button ng-click="next()" ng-disabled="currentPage >= maxPages">Next</button>
+       
        <div ng-repeat="char in characterData | filter : sort">
            <b>Name:</b> {{char.name}} - <b>Gender:</b> {{char.gender}} - <b>Eye Color:</b> {{char.eye_color}} - <b>Hair Color:</b> {{char.hair_color}}
        </div>
