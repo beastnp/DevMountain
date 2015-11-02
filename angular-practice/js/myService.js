@@ -1,15 +1,22 @@
 angular.module('myApp').service('myService', function ($q, $http) {
 
-    var baseUrl = 'http://swapi.co/api/people/?page='
+    this.goGetEm = function () {
 
-    this.goGetEm = function(pageNum) {
-        
         var deferred = $q.defer();
-        
-        $http.get(baseUrl + pageNum).then(function(response) {
-            var parsedResponse = response.data.results;
-            deferred.resolve(parsedResponse);
-        })
+        var next = "http://swapi.co/api/people";
+        var finalResults = [];
+
+        do {
+            console.log("getting", next);
+            $http.get(next).then(function (response) {
+                var parsedResponse = response.data.results;
+                finalResults.push(parsedResponse);
+                next = response.data.next;
+            });
+        } while (next !== null);
+
+        deferred.resolve(finalResults);
+
         return deferred.promise;
     };
 

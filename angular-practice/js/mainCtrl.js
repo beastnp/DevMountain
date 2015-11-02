@@ -3,8 +3,8 @@ angular.module('myApp').controller('mainCtrl', function($scope, myService) {
     $scope.currentPage = 1;
     $scope.maxPages = 9;
     
-    $scope.getData = function(pageNum) {
-        myService.goGetEm(pageNum).then(function(swData) {
+    $scope.getData = function() {
+        myService.goGetEm().then(function(swData) {
             $scope.characterData = swData;
             console.log($scope.characterData);
         })
