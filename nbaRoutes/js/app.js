@@ -14,10 +14,10 @@ app.config(function ($stateProvider, $urlRouterProvider, $httpProvider) {
         })
         .state('teams', {
             url: '/teams/:team',
-            templateUrl: 'js/teams/teamTmpl/html',
+            templateUrl: 'js/teams/teamTmpl.html',
             controller: 'teamCtrl',
-            resolve: {teamData: function(teamService, $routeParams) {
-                teamService.getTeamData($routeParams.teams)
+            resolve: {teamData: function(teamService, $stateParams) {
+                teamService.getTeamData($stateParams.teams)
             }}
         });
 

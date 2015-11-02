@@ -7,9 +7,7 @@ app.controller('teamCtrl', function ($scope, $stateParams, teamService, teamData
     
     $scope.teamData = teamData;
     
-    $scope.newGame = {
-        homeTeam: $scope.homeTeam.split(' ').join('').toLowerCase()
-    };
+    $scope.newGame = {};
     
     $scope.showNewGameForm = false;
     
@@ -17,9 +15,11 @@ app.controller('teamCtrl', function ($scope, $stateParams, teamService, teamData
         $scope.showNewGameForm = !$scope.showNewGameForm;
     };
     
-//    $scope.toggleNewGameForm();
+    $scope.toggleNewGameForm();
     
     var team = $stateParams.team;
+    
+    console.log(team);
     
     if (team === 'utahjazz') {
         $scope.homeTeam = 'Utah Jazz';
@@ -32,6 +32,7 @@ app.controller('teamCtrl', function ($scope, $stateParams, teamService, teamData
         $scope.logoPath = 'images/heat-logo.png';
     }
     
+    $scope.newGame.homeTeam = $scope.homeTeam.split(' ').join('').toLowerCase();
     
     $scope.submitGame = function() {
         teamService.addNewGame($scope.newGame).then(function() {
@@ -42,7 +43,5 @@ app.controller('teamCtrl', function ($scope, $stateParams, teamService, teamData
             })
         })
     }
-    
-    console.log($scope);
 
 });
