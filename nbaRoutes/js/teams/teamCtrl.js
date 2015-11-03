@@ -15,8 +15,6 @@ app.controller('teamCtrl', function ($scope, $stateParams, teamService, teamData
         $scope.showNewGameForm = !$scope.showNewGameForm;
     };
     
-    $scope.toggleNewGameForm();
-    
     var team = $stateParams.team;
     
     console.log(team);
