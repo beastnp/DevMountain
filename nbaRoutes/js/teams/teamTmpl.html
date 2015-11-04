@@ -3,7 +3,7 @@
         <img ng-src="{{logoPath}}">
     </div>
     <div class="record">
-        <h1> Wins: ???????? Losses: ???????? </h1>
+        <h1> Wins: {{teamData.wins}} Losses: {{teamData.losses}} </h1>
     </div>
     <div class="btn" ng-click="toggleNewGameForm()"> Add a New Game </div>
     <form ng-show="showNewGameForm" class="form">
@@ -12,8 +12,8 @@
         <select ng-model="newGame.opponent" ng-options="team for team in teams" class="form-control" required name="team"></select>
         <br />
         <span class="large"> Score: </span>
-        <br /> ????????:
-        <input class="inputs" type="text" ng-model="newGame.homeTeamScore" placeholder="Home Score"> ????????:
+        <br /> {{homeTeam}}:
+        <input class="inputs" type="text" ng-model="newGame.homeTeamScore" placeholder="Home Score"> {{newGame.opponent}}:
         <input type="text" class="inputs" ng-model="newGame.opponentScore" placeholder="Opponent Score">
         <br />
         <button ng-click="submitGame()"> Submit Game </button>
@@ -25,9 +25,9 @@
         Utah Jazz - 103
         Houston Rockets - 100
       -->
-            Date: ????????
-            <br /> ???????? - ????????
-            <br /> ???????? - ????????
+            Date: {{game.createdAt | date : 'MMMM d, y'}}
+            <br /> {{homeTeam}} - {{game.homeTeamScore}}
+            <br /> {{game.opponent}} - {{game.opponentScore}}
             </br />
         </div>
     </div>
