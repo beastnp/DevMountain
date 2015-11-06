@@ -13,7 +13,6 @@ app.config(function ($stateProvider, $urlRouterProvider) {
             controller: 'threadsCtrl',
             resolve: {
                 threadsRef: function (threadsService) {
-                    console.log(threadsService.getThreads());
                     return threadsService.getThreads();
                 }
             }
