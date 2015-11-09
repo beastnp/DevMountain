@@ -8,11 +8,6 @@ angular.module('noServerApp', ['ui.router'])
             templateUrl: 'app/js/home/homeTmpl.html',
             controller: 'homeCtrl'
         })
-        .state('skills', {
-            url: '/skills',
-            templateUrl: 'app/js/skills/skillsTmpl.html',
-            controller: 'skillsCtrl'
-        }) 
         .state('portfolio', {
             url: '/portfolio',
             templateUrl: 'app/js/portfolio/portfolioTmpl.html',

@@ -9,11 +9,10 @@
 
 <body>
 
-    <div class="main-container" ng-controller="mainCtrl">
-        <div class="nav">
+    <div class="main-container">
+        <div class="nav-top">
             <ul>
                 <li><a href="/#/home">Home</a></li>
-                <li><a href="/#/skills">Skills</a></li>
                 <li><a href="/#/portfolio">Portfolio</a></li>
                 <li><a href="/#/about">About</a></li>
                 <li><a href="/#/contact">Contact</a></li>
@@ -22,9 +21,15 @@
 
     </div>
 
-    <div class="routerView">
-        <div ui-view></div>
-    </div>
+        <div ui-view class="router-view"></div>
+    
+        <div class="nav-bottom">
+            <ul>
+                <li><a href="https://www.linkedin.com/in/npeterson1">LinkedIn</a></li>
+                <li><a href="https://github.com/beastnp">GitHub</a></li>
+                <li><a href="#">E-Mail</a></li>
+            </ul>
+        </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.js"></script>
@@ -34,7 +39,6 @@
     <script src="app/js/contact/contactCtrl.js"></script>
     <script src="app/js/home/homeCtrl.js"></script>
     <script src="app/js/portfolio/portfolioCtrl.js"></script>
-    <script src="app/js/skills/skillsCtrl.js"></script>
 
 </body>
 
