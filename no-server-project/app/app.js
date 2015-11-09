@@ -13,10 +13,10 @@ angular.module('noServerApp', ['ui.router'])
             templateUrl: 'app/js/portfolio/portfolioTmpl.html',
             controller: 'portfolioCtrl'
         }) 
-        .state('about', {
-            url: '/about',
-            templateUrl: 'app/js/about/aboutTmpl.html',
-            controller: 'aboutCtrl'
+        .state('capabilities', {
+            url: '/capabilities',
+            templateUrl: 'app/js/capabilities/capabilitiesTmpl.html',
+            controller: 'capabilitiesCtrl'
         })
         .state('contact', {
             url: '/contact',

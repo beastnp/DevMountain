@@ -1,11 +1,12 @@
 body {
     height: 100%;
     width: 100%;
-    background-color: black;
+    background-color: #8b8989;
 }
 
 .nav-top,
-.nav-bottom {
+.nav-bottom,
+.home-top-banner {
     position: relative;
     width: 100%;
     height: 50px;
@@ -20,72 +21,110 @@ body {
 }
 
 .nav-top ul li,
-.nav-bottom ul li {
+.nav-bottom ul li,
+.home-nav-top ul li {
     list-style-type: none;
     display: inline;
     margin: 10px;
     padding: 10px;
 }
 
-.nav-top ul li a,
-.nav-bottom ul li a {
+.nav-bottom ul li {
+    padding: 0px;
+}
+
+a {
     text-decoration: none;
     color: white;
 }
 
-.nav-top ul li a:visited,
-.nav-bottom ul li a:visited {
+a:visited{
     color: white;
 }
 
-.home-container {
-    height: 600px;
+.home-container,
+.contact-container {
+    height: 700px;
     width: 100%;
     background: url('https://static.pexels.com/photos/7070/space-desk-workspace-coworking.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
 }
 
 .home-container div {
     text-align: center;
-    padding-top: 150px;
+    padding-top: 170px;
     color: white;
 }
 
-.portfolio-container {
-    height: 600px;
+.portfolio-header,
+.capabilities-header {
+    height: 300px;
     width: 100%;
-    background: url('https://static.pexels.com/photos/6494/sky-art-blocks.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    background: url('https://static.pexels.com/photos/291/black-and-white-city-landmark-lights.jpg');
 }
 
-.portfolio-container div {
+.portfolio-header div {
     text-align: center;
     padding-top: 250px;
     color: black;
 }
 
-.about-container {
-    height: 600px;
-    width: 100%;
-    background: url('https://static.pexels.com/photos/7464/pexels-photo.jpeg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+.capabilities-header {
+    background: url('https://static.pexels.com/photos/1018/mountains-nature-sunny-bridge.jpg');
 }
 
 .contact-container {
-    height: 600px;
-    width: 100%;
-    background: url('https://static.pexels.com/photos/6465/man-field-smartphone-yellow.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    background: url('https://static.pexels.com/photos/8252/hand.jpg');
 }
 
 .contact-container div {
     color: black;
 }
+
+.home-container,
+.portfolio-header,
+.capabilities-header,
+.contact-container {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.home-nav-top {
+    position: relative;
+    margin-top: -87px;
+}
+
+.project-one, .project-two {
+    height: 410px;
+    width: 700px;
+    position: relative;
+    margin: 20px auto;
+}
+
+.capabilities-header {
+    width: 100%;
+}
+
+.capabilities-main {
+    width: 700px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 10px 10px;
+    text-align: center;
+    margin: 10px auto;
+}
+
+.skills {
+    width: 50%;
+    margin-top: 40px;
+}
+
+
+
+
+
+
+
+
+

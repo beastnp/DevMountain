@@ -7,9 +7,16 @@
     </ul>
 </div>
 
-<div class="contact-container">
+<div class="capabilities-header"></div>
 
-    <div>
-        Contact Me!
+<div class="capabilities-container">
+    
+    <div class="capabilities-main">
+        
+        <span class="skills" ng-repeat="skill in skills"><img src="{{ skill.url }}">
+        <br>
+        {{ skill.name }}</span>
+        
     </div>
+    
 </div>
