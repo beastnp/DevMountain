@@ -118,6 +118,9 @@ a:visited{
 .skills {
     width: 50%;
     margin-top: 40px;
+    color: white;
+    font-weight: 700;
+    font-size: 20px;
 }
 
 

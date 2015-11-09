@@ -1,5 +1,5 @@
-angular.module('noServerApp').controller('capabilitiesCtrl', function($scope, capabilitiesService) {
+angular.module('noServerApp').controller('capabilitiesCtrl', function($scope, mainService) {
     
-    $scope.skills = capabilitiesService.skillsArray;
+    $scope.skills = mainService.skillsArray;
     
 });

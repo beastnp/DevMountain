@@ -1,22 +1,16 @@
-<div class="nav-top">
-    <ul>
-        <li><a href="/#/home">Home</a></li>
-        <li><a href="/#/portfolio">Portfolio</a></li>
-        <li><a href="/#/capabilities">Capabilities</a></li>
-        <li><a href="/#/contact">Contact</a></li>
-    </ul>
-</div>
+<main-directive></main-directive>
 
 <div class="capabilities-header"></div>
 
 <div class="capabilities-container">
-    
+
     <div class="capabilities-main">
-        
-        <span class="skills" ng-repeat="skill in skills"><img src="{{ skill.url }}">
+
+        <span class="skills" ng-repeat="skill in skills"><img src="{{ skill.url }}" height="150" width="150">
+        <br>
         <br>
         {{ skill.name }}</span>
-        
+
     </div>
-    
+
 </div>

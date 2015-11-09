@@ -1,4 +1,4 @@
-angular.module('noServerApp').service('capabilitiesService', function() {
+angular.module('noServerApp').service('mainService', function() {
     
     this.skillsArray = [
         {
@@ -11,11 +11,11 @@ angular.module('noServerApp').service('capabilitiesService', function() {
         },
         {
             name: 'JavaScript',
-            url: 'http://jeffchapman.io/wp-content/uploads/2015/04/js-150x150.png'
+            url: 'http://cursohtml5js.com/js.png'
         },
         {
             name: 'AngularJS',
-            url: 'http://jeffchapman.io/wp-content/uploads/2015/04/angularjs-150x150.png'
+            url: 'http://pucksart.com/wp-content/uploads/2014/10/AngularJS-Shield-large-282x300.png'
         },  
         {
             name: 'Git',
