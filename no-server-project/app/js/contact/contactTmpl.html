@@ -1,6 +1,8 @@
 <main-directive></main-directive>
 
 <div class="contact-container">
+    
+    <div class="contact-bar"></div>
 
     <div class="contact-header">
        <br>
@@ -16,6 +18,8 @@
         <input class="email-subject" type="text" ng-model="emailSubject" placeholder="Subject"></input>
         <br>
         <textarea class="email-compose" ng-model="emailCompose" placeholder="Your Message" required></textarea>
+        <br>
+        <button class="submit-button" ng-click="sendEmail(username, userEmail, emailSubject, emailCompose)">Send</button>
     </form>
 
 </div>
