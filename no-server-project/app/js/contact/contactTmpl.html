@@ -2,7 +2,20 @@
 
 <div class="contact-container">
 
-    <div>
-        Contact Me!
+    <div class="contact-header">
+       <br>
+        <h1>Contact Me</h1>
+        <h4>Please feel free to contact me with any great opportunities!</h4>
     </div>
+
+    <form class="email-form">
+        <input class="username" type="text" ng-model="username" placeholder="Your Name" required></input>
+        <br>
+        <input class="user-email" type="text" ng-model="userEmail" placeholder="Your E-Mail Address" required></input>
+        <br>
+        <input class="email-subject" type="text" ng-model="emailSubject" placeholder="Subject"></input>
+        <br>
+        <textarea class="email-compose" ng-model="emailCompose" placeholder="Your Message" required></textarea>
+    </form>
+
 </div>

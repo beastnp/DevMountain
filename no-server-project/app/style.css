@@ -6,17 +6,22 @@ body {
 
 .nav-top,
 .nav-bottom,
-.home-top-banner {
+.home-nav-top {
     position: relative;
     width: 100%;
-    height: 50px;
+    height: 75px;
     margin: 0px auto;
     color: white;
 }
 
 .nav-top ul,
-.nav-bottom ul {
+.nav-bottom ul,
+.home-nav-top ul {
     float: right;
+    margin: 30px;
+}
+
+.nav-bottom ul {
     margin: 20px;
 }
 
@@ -31,6 +36,11 @@ body {
 
 .nav-bottom ul li {
     padding: 0px;
+}
+
+.nav-bottom img {
+    height: 40px;
+    width: 40px;
 }
 
 a {
@@ -49,10 +59,23 @@ a:visited{
     background: url('https://static.pexels.com/photos/7070/space-desk-workspace-coworking.jpg');
 }
 
-.home-container div {
+.home-bar {
+    height: 260px;
+    width: 100%;
+    position: absolute;
+    background-color: azure;
+    margin-top: 190px;
+    opacity: 0.7;
+    z-index: 1;
+}
+
+.home-name {
+    width: 100%;
+    z-index: 2;
+    position: absolute;
+    color: black;
     text-align: center;
-    padding-top: 170px;
-    color: white;
+    margin-top: 175px;
 }
 
 .portfolio-header,
@@ -73,11 +96,7 @@ a:visited{
 }
 
 .contact-container {
-    background: url('https://static.pexels.com/photos/8252/hand.jpg');
-}
-
-.contact-container div {
-    color: black;
+    background: url('https://static.pexels.com/photos/2318/vintage-technology-keyboard-old.jpg');
 }
 
 .home-container,
@@ -87,11 +106,6 @@ a:visited{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-}
-
-.home-nav-top {
-    position: relative;
-    margin-top: -87px;
 }
 
 .project-one, .project-two {
@@ -123,11 +137,33 @@ a:visited{
     font-size: 20px;
 }
 
+.contact-container {
+    text-align: center;
+}
 
+.contact-header h1, .contact-header h4 {
+    color: white;
+    font-family: fantasy;
+    font-size: 58px;
+}
 
+.contact-header h4 {
+    font-size: 18px;
+    margin-top: -30px;
+}
 
+.email-form {
+   padding-top: 10px; 
+}
 
+.username, .user-email, .email-subject, .email-compose {
+    height: 30px;
+    width: 60%;
+    margin: 5px;
+    border: 2px solid black;
+}
 
-
-
-
+.email-compose {
+    height: 300px;
+    margin-right: 10px;
+}
