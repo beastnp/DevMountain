@@ -1,4 +1,4 @@
-angular.module('noServerApp', ['ui.router'])
+angular.module('noServerApp', ['ui.router', 'firebase'])
 
 .config(function ($stateProvider, $urlRouterProvider) {
 

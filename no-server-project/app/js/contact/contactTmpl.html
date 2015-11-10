@@ -15,11 +15,11 @@
         <br>
         <input class="user-email" type="text" ng-model="userEmail" placeholder="Your E-Mail Address" required></input>
         <br>
-        <input class="email-subject" type="text" ng-model="emailSubject" placeholder="Subject"></input>
+        <input class="email-subject" type="text" ng-model="emailSubject" placeholder="Subject" required></input>
         <br>
         <textarea class="email-compose" ng-model="emailCompose" placeholder="Your Message" required></textarea>
         <br>
-        <button class="submit-button" ng-click="sendEmail(username, userEmail, emailSubject, emailCompose)">Send</button>
+        <button class="submit-button" ng-click="sendEmail()">Send</button>
     </form>
 
 </div>
