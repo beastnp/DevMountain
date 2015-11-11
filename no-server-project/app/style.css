@@ -1,0 +1,234 @@
+body {
+    height: 100%;
+    width: 100%;
+    background-color: #8b8989;
+}
+
+.nav-top,
+.nav-bottom,
+.home-nav-top {
+    position: relative;
+    width: 100%;
+    height: 75px;
+    margin: 0px auto;
+    color: white;
+}
+
+.nav-top ul,
+.nav-bottom ul,
+.home-nav-top ul {
+    float: right;
+    margin: 30px;
+}
+
+.nav-bottom ul {
+    margin: 20px;
+}
+
+.nav-top ul li,
+.nav-bottom ul li,
+.home-nav-top ul li {
+    list-style-type: none;
+    display: inline;
+    margin: 10px;
+    padding: 10px;
+}
+
+.nav-bottom ul li {
+    padding: 0px;
+}
+
+.nav-bottom img {
+    height: 40px;
+    width: 40px;
+}
+
+.nav-top img {
+    margin-left: 30px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:visited {
+    color: white;
+}
+
+.home-container,
+.contact-container {
+    height: 700px;
+    width: 100%;
+    background: url('https://static.pexels.com/photos/7070/space-desk-workspace-coworking.jpg');
+}
+
+.home-bar,
+.contact-bar {
+    height: 260px;
+    width: 100%;
+    position: absolute;
+    background-color: azure;
+    margin-top: 190px;
+    opacity: 0.7;
+    z-index: 1;
+}
+
+.home-name {
+    width: 100%;
+    z-index: 2;
+    position: absolute;
+    color: black;
+    text-align: center;
+    margin-top: 175px;
+}
+
+.portfolio-header,
+.capabilities-header {
+    height: 300px;
+    width: 100%;
+    background: url('https://static.pexels.com/photos/291/black-and-white-city-landmark-lights.jpg');
+}
+
+.portfolio-header div {
+    text-align: center;
+    padding-top: 250px;
+    color: black;
+}
+
+.capabilities-header {
+    background: url('https://static.pexels.com/photos/915/apple-camera-desk-office.jpg');
+}
+
+.contact-container {
+    background: url('https://static.pexels.com/photos/2318/vintage-technology-keyboard-old.jpg');
+}
+
+.home-container,
+.portfolio-header,
+.capabilities-header,
+.contact-container {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.project-one,
+.project-two {
+    height: 410px;
+    width: 700px;
+    position: relative;
+    margin: 20px auto;
+}
+
+.capabilities-header {
+    width: 100%;
+}
+
+.capabilities-bar {
+    width: 100%;
+    height: 300px;
+    position: absolute;
+    background-color: black;
+    opacity: 0.3;
+}
+
+.capabilities-quote {
+    width: 100%;
+    position: absolute;
+    margin-top: 150px;
+    text-align: center;
+    font-size: 24px;
+    color: white;
+    font-family: cursive;
+}
+
+.capabilities-main {
+    width: 700px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 10px 10px;
+    text-align: center;
+    margin: 10px auto;
+}
+
+.skills {
+    width: 50%;
+    margin-top: 40px;
+    color: white;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.contact-header h1,
+.contact-header h4 {
+    color: white;
+    font-family: sans-serif;
+    font-size: 58px;
+    text-align: center;
+    margin-top: -5px;
+}
+
+.contact-header h4 {
+    font-size: 18px;
+    margin-top: -30px;
+}
+
+.username,
+.user-email,
+.email-subject,
+.email-compose,
+.submit-button {
+    height: 30px;
+    width: 60%;
+    margin: 5px 20%;
+    border: 2px solid white;
+    background: transparent;
+    color: white;
+    padding-left: 5px;
+}
+
+.email-compose {
+    padding-top: 10px;
+}
+
+::-webkit-input-placeholder {
+    color: white;
+    padding-left: 5px;
+}
+
+.email-compose {
+    height: 300px;
+}
+
+.submit-button {
+    width: 20%;
+}
+
+.contact-bar {
+    width: 100%;
+    height: 700px;
+    margin: 0;
+    opacity: 0.3;
+    background-color: black;
+}
+
+.contact-header {
+    width: 100%;
+    z-index: 2;
+    position: absolute;
+    color: white;
+}
+
+.email-form {
+    width: 100%;
+    z-index: 3;
+    position: absolute;
+    margin-top: 160px;
+}
+
+.admin-email-list div {
+    border: 1px solid black;
+}
+

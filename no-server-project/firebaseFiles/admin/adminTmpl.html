@@ -1,0 +1,20 @@
+<main-directive></main-directive>
+
+<div class="admin-email-list">
+    
+    
+    <input ng-model="searchTerm"></input>
+        <div ng-repeat="email in emails | filter : searchTerm">
+            <span>Name: {{ email.username }}</span>
+            <br>
+            <span>E-mail: {{ email.userEmail }}</span>
+            <br>
+            <span>Subject: {{ email.emailSubject }}</span>
+            <br>
+            <span>Message: {{ email.emailCompose }}</span>
+            <br>
+            <span>Date: {{ email.emailDate | date : 'medium' }}</span>
+            <br>
+        </div>
+    
+</div>

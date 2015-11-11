@@ -1,0 +1,24 @@
+<main-directive></main-directive>
+
+<div class="capabilities-container">
+
+    <div class="capabilities-header">
+        <div class="capabilities-bar"></div>
+        <div class="capabilities-quote">
+            Learning how to learn is life's most important skill. - Tony Buzan
+        </div>
+        
+    </div>
+
+    <div class="capabilities-main">
+
+        <span class="skills" ng-repeat="skill in skills"><img src="{{ skill.url }}" height="150" width="150">
+        <br>
+        <br>
+        {{ skill.name }}</span>
+
+    </div>
+
+</div>
+
+<footer-directive></footer-directive>
