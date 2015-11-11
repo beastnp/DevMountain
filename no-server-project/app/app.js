@@ -22,11 +22,6 @@ angular.module('noServerApp', ['ui.router', 'firebase'])
             url: '/contact',
             templateUrl: 'app/js/contact/contactTmpl.html',
             controller: 'contactCtrl'
-        })
-        .state('admin', {
-            url: '/admin',
-            templateUrl: 'app/js/admin/adminTmpl.html',
-            controller: 'adminCtrl'
         });
     
     $urlRouterProvider
