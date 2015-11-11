@@ -2,12 +2,14 @@ angular.module('noServerApp').service('firebaseService', function($firebaseArray
     
     var ref = new Firebase('https://np-personal-site.firebaseio.com/');
     
-    var emailsArray = $firebaseArray(ref);
+    this.emailsArray = $firebaseArray(ref);
     
     this.pushFirebaseArray = function(email) {
-        emailsArray.$add(email);
-    }
+        this.emailsArray.$add(email);
+    };
     
-    
+    this.getEmails = function(email) {
+        return new Firebase('https://np-personal-site.firebaseio.com/' + '/admin');
+    };
     
 })
