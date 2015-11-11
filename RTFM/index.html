@@ -8,6 +8,21 @@
 
 <body>
 
+    <form name="loginForm" ng-if="!authData">
+        <fieldset>
+            <input type="email" ng-model="loginUser.email" placeholder="E-mail address..." required></input>
+            <input type="password" ng-model="loginUser.password" placeholder="Password..." required></input>
+            <br>
+            <button ng-click="login(loginUser)" ng-disabled="loginForm.$invalid">Login</button>
+            <button ng-click="register(loginUser)" ng-disabled="loginForm.$invalid">Register</button>
+        </fieldset>
+    </form>
+    
+    <div ng-if="authData">
+        <span>Logged in as: {{ authData.uid }}</span>
+        <button ng-click="authObj.$unauth()">Log Out</button>
+    </div>
+
     <ui-view></ui-view>
 
 
