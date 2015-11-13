@@ -22,10 +22,10 @@ app.get('/', function (req, res, next) {
 
 app.post('/', function (req, res, next) {
 
-    messages.push({
-        message: req.body.message,
-        time: new Date()
-    });
+    var message = req.body.message;
+    message.time = new Date ();
+    console.log(message);
+    messages.push(message);
 
 
     res.status(200).set({
