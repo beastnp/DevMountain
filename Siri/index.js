@@ -5,13 +5,13 @@ var app = express();
 var messages = [
     "Does a drunk horse care where he pees?",
     "If my dog was as ugly as you, I'd shave it's butt and teach it to walk backwards.",
-    "Oh I'm so sorry, please forgive me. Please. Please? Please!",
+    "Has anyone told you that you smell like a hippie?",
     "Why don't you just Google it?",
     "Oh crap, did you lose your glue stick again?",
-    "I once had that question. Never did find the answer.",
-    "Do you kiss your mother with that mouth?",
+    "Leave me alone.",
+    "Are you drunk?",
     "Doesn't change the way mustard tastes.",
-    "I wouldn't bet my life on it, but I'd bet everything I own on it."
+    "I don't know and I don't care!"
 ]
 
 var getRandomMessage = function () {
