@@ -3,7 +3,7 @@ var express = require('express');
 var app = express();
 
 var messages = [
-    "Does a drunk horse care where he pees?",
+    "How dare you.",
     "If my dog was as ugly as you, I'd shave it's butt and teach it to walk backwards.",
     "Has anyone told you that you smell like a hippie?",
     "Why don't you just Google it?",
