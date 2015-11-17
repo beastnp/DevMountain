@@ -5,11 +5,16 @@ var mongo = require('mongojs');
 
 var app = express();
 
+var corsOptions = {
+    origin: 'http://localhost:8080'
+};
+
 var db = mongo('ecommerce');
 var products = db.collection("products");
 
 app.use(bodyParser.json());
 app.use(cors());
+app.use(express.static(__dirname + '/public'));
 
 
 app.get('/products', function(req, res, next) {

@@ -1,0 +1,8 @@
+.productList {
+    width: 30%;
+    border: 1px solid blue;
+    margin: 10px auto;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
