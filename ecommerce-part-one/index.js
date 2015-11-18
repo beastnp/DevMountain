@@ -17,7 +17,7 @@ app.use(cors());
 app.use(express.static(__dirname + '/public'));
 
 
-app.get('/products', function(req, res, next) {
+app.get('/api/products', function(req, res, next) {
     products.find(req.query, function(err, result) {
         if (err) {
             res.send(err);
@@ -27,7 +27,7 @@ app.get('/products', function(req, res, next) {
     });
 });
 
-app.post('/products', function(req, res, next) {
+app.post('/api/products', function(req, res, next) {
     products.insert(req.body, function(err, result) {
         if (err) {
             res.send(err);
@@ -37,7 +37,7 @@ app.post('/products', function(req, res, next) {
     });
 });
 
-app.put('/products', function(req, res, next) {
+app.put('/api/products', function(req, res, next) {
     products.update({"_id": mongo.ObjectId(req.query.id)}, req.body, function(err, result) {
         if (err) {
             res.send(err);
@@ -47,7 +47,7 @@ app.put('/products', function(req, res, next) {
     });
 });
 
-app.delete('/products', function(req, res, next) {
+app.delete('/api/products', function(req, res, next) {
     products.remove({"_id": mongo.ObjectId(req.query.id)}, req.body, function(err, result) {
         if (err) {
             res.send(err);

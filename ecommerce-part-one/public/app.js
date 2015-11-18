@@ -9,7 +9,7 @@ angular.module('ecommerceApp', ['ui.router'])
             controller: 'homeCtrl',
             resolve: {
                 productInfo: function ($http) {
-                    return $http.get('/products')
+                    return $http.get('api/products')
                         .then(function (response) {
                             return response.data;
                         })
@@ -19,7 +19,15 @@ angular.module('ecommerceApp', ['ui.router'])
         .state('admin', {
             url: '/admin',
             templateUrl: './views/admin/adminTmpl.html',
-            controller: 'adminCtrl'
+            controller: 'adminCtrl',
+            resolve: {
+                productInfo: function ($http) {
+                    return $http.get('api/products')
+                        .then(function (response) {
+                            return response.data;
+                        })
+                }
+            }
         });
 
     $urlRouterProvider.otherwise('/');
