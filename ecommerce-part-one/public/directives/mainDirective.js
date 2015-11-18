@@ -4,7 +4,7 @@ angular.module('ecommerceApp')
     
    return {
        restrict: 'E',
-       template: '<div class="productList">Name: {{ product.name }}<br>Type: {{ product.classification }}<br> Price: {{ product.price }}<br></div>'
+       template: '<div class="productList">Name: {{ product.title }}<br>Department: {{ product.description }}<br> Price: {{ product.price }}<br></div>'
    }; 
     
     

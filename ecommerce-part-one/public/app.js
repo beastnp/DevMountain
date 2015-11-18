@@ -8,11 +8,8 @@ angular.module('ecommerceApp', ['ui.router'])
             templateUrl: './views/home/homeTmpl.html',
             controller: 'homeCtrl',
             resolve: {
-                productInfo: function ($http) {
-                    return $http.get('api/products')
-                        .then(function (response) {
-                            return response.data;
-                        })
+                productInfo: function (mainService) {
+                    return mainService.getProducts();
                 }
             }
         })
