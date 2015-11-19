@@ -9,15 +9,18 @@ angular.module('ecommerceApp')
     };
     
     this.addNewProduct = function(product) {
-        $http.post('/api/products', product).then(function(response) {
-            return response.data;
+        return $http.post('/api/products', product).then(function(response) {
+            return response;
         });
     };
+    
+    this.updateProduct = function(product) {
+        var endpoint = '/api/products/' + product._id;
+        return $http.put(endpoint, product);
+        };
 
     this.deleteProduct = function (productId) {
-        $http.delete('/api/products/' + productId).then(function(response) {
-            return response.data;
-        });
+        return $http.delete('/api/products/' + productId);
     };
     
 

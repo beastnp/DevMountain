@@ -1,7 +1,7 @@
 <div class="adminWrapper">
-    
+
     <form class="addProductForm">
-        
+
         <h1>Add New Product</h1>
         <input ng-model="newProduct.title" type="text" placeholder="Name...">
         <br>
@@ -9,20 +9,31 @@
         <br>
         <input ng-model="newProduct.price" type="number" placeholder="Price...">
         <br>
-        <button ng-click="addNewProduct(newProduct)">Add</button>
-        
+        <button ng-click="addNewProduct()">Add</button>
+
     </form>
 
     <div ng-repeat="product in products" class="productList">
-            Name: {{ product.title }}
-            <br> 
-            Description: {{ product.description }}
-            <br> 
-            Price: {{ product.price }}
+        Name: {{ product.title }}
+        <br> Description: {{ product.description }}
+        <br> Price: {{ product.price }}
+        <br> ID: {{ product._id }}
+        <br>
+        <button ng-click="deleteProduct(product._id)">Delete Product</button>
+        <br>
+<!--        <button ng-click="showUpdateForm()">Update Product</button>-->
+        <form class="updateProductForm">
+
+            <input ng-model="product.title" type="text" placeholder="Name...">
             <br>
-            ID: {{ product._id }}
+            <input ng-model="product.description" type="text" placeholder="Description...">
             <br>
-            <button ng-click="deleteProduct(product._id)">Delete Product</button>
+            <input ng-model="product.price" type="number" placeholder="Price...">
+            <br>
+            <button ng-click="updateProduct(product)">Submit Update</button>
+
+        </form>
+        <br>
     </div>
-    
+
 </div>
