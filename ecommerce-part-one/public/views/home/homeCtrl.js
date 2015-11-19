@@ -1,7 +1,13 @@
 angular.module('ecommerceApp')
 
-.controller('homeCtrl', function($scope, productInfo) {
+.controller('homeCtrl', function($scope, mainService) {
     
-    $scope.products = productInfo;
+    $scope.getProducts = function () {
+        mainService.getProducts().then(function (response) {
+            $scope.products = response;
+        })
+    };
+
+    $scope.getProducts();
     
 });

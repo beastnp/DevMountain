@@ -1,5 +1,11 @@
 <div class="homeWrapper">
     
-    <main-directive ng-repeat="product in products"></main-directive>
+    <div ng-repeat="product in products" class="productList">
+            Name: {{ product.title }}
+            <br> 
+            Description: {{ product.description }}
+            <br> 
+            Price: {{ product.price }}
+    </div>
     
 </div>

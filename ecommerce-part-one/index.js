@@ -20,32 +20,8 @@ app.use(express.static(__dirname + '/public'));
 
 app.get('/api/products', productCtrl.getProduct);
 app.post('/api/products', productCtrl.addProduct);
-
-app.put('/api/products', function(req, res, next) {
-    products.update({"_id": mongo.ObjectId(req.query.id)}, req.body, function(err, result) {
-        if (err) {
-            res.send(err);
-        } else {
-            res.send(result);
-        }
-    });
-});
-
-app.delete('/api/products', function(req, res, next) {
-    products.remove({"_id": mongo.ObjectId(req.query.id)}, req.body, function(err, result) {
-        if (err) {
-            res.send(err);
-        } else {
-            res.send(result);
-        }
-    });
-});
-
-
-
-
-
-
+app.put('/api/products/:id', productCtrl.updateProduct);
+app.delete('/api/products/:id', productCtrl.deleteProduct);
 
 
 app.listen(8080, function() {
